@@ -91,6 +91,13 @@ public class CommonController
         }
     }
 
+    /**
+     *
+     * @param request
+     * @param fileName
+     * @return
+     * @throws UnsupportedEncodingException
+     */
     public String setFileDownloadHeader(HttpServletRequest request, String fileName) throws UnsupportedEncodingException
     {
         final String agent = request.getHeader("USER-AGENT");
